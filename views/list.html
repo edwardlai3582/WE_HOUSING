@@ -1,0 +1,32 @@
+<div id="listWrapper" >
+    <header>
+        {{searchTerm}}
+    </header> 
+    
+    <section>
+        <button ng-click="sort_by('popularity')">
+            popularity        
+        </button>
+        <button ng-click="sort_by('price')">
+            price     
+        </button>
+        <ul>
+            <li ng-repeat="apartment in apartments | orderBy:sortingOrder:reverse | startFrom:currentPage*pageSize | limitTo:pageSize">
+                <a ui-sref="detail({name: apartment.name.replace(' ','_'), apartment: apartment})">
+                    <div>NAME: {{apartment.name}}</div>
+                    <div class="price">PRICE: {{apartment.price}}</div>
+                    <div class="popularity">POPULARITY: {{apartment.popularity}}</div>                       
+                </a>
+            </li>
+        </ul>
+            
+        <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1">
+            Previous
+        </button>
+        {{currentPage+1}}/{{numberOfPages()}}
+        <button ng-disabled="currentPage >= apartments.length/pageSize - 1" ng-click="currentPage=currentPage+1">
+            Next
+        </button>    
+    </section>        
+    
+</div>
