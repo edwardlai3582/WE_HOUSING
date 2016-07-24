@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Bungee+Shade';
 
 html,body{
     position: relative;
@@ -199,11 +198,11 @@ a{
     padding-left: 10px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
+@import 'https://fonts.googleapis.com/css?family=Shrikhand';
 .apartmentDetail > .name{
     color: #55DF22;
     font-size: 40px;
-    font-family: 'Bungee Shade', cursive;
+    font-family: 'Shrikhand', cursive;
 }
 
 #bg {
