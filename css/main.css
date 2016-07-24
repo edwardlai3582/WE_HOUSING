@@ -202,7 +202,7 @@ a{
 
 .apartmentDetail > .name{
     color: yellow;
-    text-shadow: none;
+    
     font-size: 40px;
     font-family: 'Francois One', sans-serif;
 }
