@@ -194,7 +194,8 @@ a{
 }
 
 .apartmentDetail{
-    background-color: white;
+    color: white;
+    margin-left: 10px;
 }
 
 #bg {
