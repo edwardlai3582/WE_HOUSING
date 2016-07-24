@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Francois+One';
+@import 'https://fonts.googleapis.com/css?family=Vesper+Libre';
 
 html,body{
     position: relative;
@@ -202,9 +202,8 @@ a{
 
 .apartmentDetail > .name{
     color: yellow;
-    
     font-size: 40px;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Vesper Libre', serif;
 }
 
 #bg {
