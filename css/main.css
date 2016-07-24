@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Hammersmith+One';
+@import 'https://fonts.googleapis.com/css?family=Gravitas+One';
 
 html,body{
     position: relative;
@@ -203,7 +203,7 @@ a{
 .apartmentDetail > .name{
     color: #4CEE62;
     font-size: 40px;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Gravitas One', cursive;
 }
 
 #bg {
