@@ -1,4 +1,4 @@
-app.controller('listController', ['$scope', 'apartmentData', function($scope, apartmentData) {
+app.controller('listController', ['$scope', '$window', 'apartmentData', function($scope, $window, apartmentData) {
     $scope.searchTerm = apartmentData.data.searchTerm;
     $scope.apartments = apartmentData.data.apartments.sort(function(a, b) {
         if (a.name < b.name){
@@ -11,11 +11,23 @@ app.controller('listController', ['$scope', 'apartmentData', function($scope, ap
             return 0;    
         }     
     });
+    
+    //PAGE
     $scope.currentPage = 0;
     $scope.pageSize = 5;
     $scope.numberOfPages = function(){
         return Math.ceil($scope.apartments.length/$scope.pageSize);                
     }
+    $scope.changePage = function(next){
+        if(next){
+            $scope.currentPage = $scope.currentPage+1    
+        }
+        else{
+            $scope.currentPage = $scope.currentPage-1    
+        }
+        $window.scrollTo(0,0);
+    }
+    
     //SORT RELATED
     $scope.sortingOrder = 'popularity';
     $scope.reverse = true;
@@ -29,7 +41,5 @@ app.controller('listController', ['$scope', 'apartmentData', function($scope, ap
         }
         $scope.currentPage = 0;
     }
-
-
     
 }]);
