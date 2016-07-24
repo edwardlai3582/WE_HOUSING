@@ -46,6 +46,7 @@ main{
 
 #listWrapper header{
     padding: 10px;
+    font-weight: bold;
 }
 
 #listSection{
