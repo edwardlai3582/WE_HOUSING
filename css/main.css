@@ -204,7 +204,7 @@ a{
     height: auto;
     position: fixed;
     z-index: -1;
-    grayscale(75%) blur(5px);
+    filter: grayscale(75%) blur(5px);
 }
 
 @media screen and (max-width: 768px){
