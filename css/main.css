@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Monoton';
+@import 'https://fonts.googleapis.com/css?family=Bungee+Shade';
 
 html,body{
     position: relative;
@@ -203,7 +203,7 @@ a{
 .apartmentDetail > .name{
     color: #55DF22;
     font-size: 40px;
-    font-family: 'Monoton', cursive;
+    font-family: 'Bungee Shade', cursive;
 }
 
 #bg {
