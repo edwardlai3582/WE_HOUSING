@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Taviraj';
+@import 'https://fonts.googleapis.com/css?family=Francois+One';
 
 html,body{
     position: relative;
@@ -204,7 +204,7 @@ a{
     color: yellow;
     text-shadow: none;
     font-size: 40px;
-    font-family: 'Taviraj', serif;
+    font-family: 'Francois One', sans-serif;
 }
 
 #bg {
