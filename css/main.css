@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Shrikhand';
+@import 'https://fonts.googleapis.com/css?family=Volkhov';
 
 html,body{
     position: relative;
@@ -201,9 +201,9 @@ a{
 }
 
 .apartmentDetail > .name{
-    color: #55DF22;
+    color: #16C3BD;
     font-size: 40px;
-    font-family: 'Shrikhand', cursive;
+    font-family: 'Volkhov', serif;
 }
 
 #bg {
