@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Volkhov';
+@import 'https://fonts.googleapis.com/css?family=Julius+Sans+One';
 
 html,body{
     position: relative;
@@ -201,9 +201,9 @@ a{
 }
 
 .apartmentDetail > .name{
-    color: #16C3BD;
+    color: #31DAD4;
     font-size: 40px;
-    font-family: 'Volkhov', serif;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 #bg {
