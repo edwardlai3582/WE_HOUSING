@@ -200,7 +200,8 @@ a{
 }
 
 .apartmentDetail > .name{
-    color: orange;
+    color: yellow;
+    font-size: 40px;
 }
 
 #bg {
