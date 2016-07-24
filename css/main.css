@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Arvo';
+@import 'https://fonts.googleapis.com/css?family=Taviraj';
 
 html,body{
     position: relative;
@@ -204,7 +204,7 @@ a{
     color: yellow;
     text-shadow: none;
     font-size: 40px;
-    font-family: 'Arvo', serif;
+    font-family: 'Taviraj', serif;
 }
 
 #bg {
