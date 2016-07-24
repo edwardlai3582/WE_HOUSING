@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Pattaya';
+@import 'https://fonts.googleapis.com/css?family=Hammersmith+One';
 
 html,body{
     position: relative;
@@ -201,9 +201,9 @@ a{
 }
 
 .apartmentDetail > .name{
-    color: #6BE790;
+    color: #4CEE62;
     font-size: 40px;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 #bg {
