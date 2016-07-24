@@ -9,10 +9,6 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img{
-    filter: grayscale(100%);
-}
-
 .weheader{
     background-color: black;
     color: orange;
@@ -208,6 +204,7 @@ a{
     height: auto;
     position: fixed;
     z-index: -1;
+    grayscale(75%) blur(5px);
 }
 
 @media screen and (max-width: 768px){
