@@ -6,9 +6,9 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         templateUrl: './views/list.html',
         controller: 'listController',
         resolve: {
-            apartmentData : function($http){
-                return $http.get('./files/apartment.json').success(function(data) {
-                    return data;
+            apartmentsData : function($http){
+                return $http.get('./files/apartment.json').then(function(response) {
+                    return response;
                 });
             }
         }
@@ -18,9 +18,19 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
         url: '/detail/{name}',
         templateUrl: './views/detail.html',
         controller: 'detailController',
-        params: {
-         apartment: null
-       },
+        resolve: {
+            apartmentData: function($http, $stateParams) {
+                return $http.get('./files/apartment.json').then(function(response) {
+                    var apartments = response.data.apartments;
+                    for(var i=0; i<apartments.length; i++){
+                        if(apartments[i].name === $stateParams.name){
+                            
+                            return apartments[i];
+                        }
+                    }
+                });
+            }
+        }
     })
 
     $urlRouterProvider.otherwise('/');
@@ -28,9 +38,15 @@ app.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $ur
 
 app.filter('startFrom', function() {
     return function(input, start) {
-        start = +start; //parse to int
+        start = +start;
         return input.slice(start);
     }
+});
+
+app.run(function ($rootScope, $window) {
+    $rootScope.$on('$stateChangeSuccess',function(){ 
+        $window.scrollTo(0,0);
+    }); 
 });
 
 

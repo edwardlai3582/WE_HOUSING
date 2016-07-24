@@ -9,6 +9,10 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+img{
+    filter: grayscale(100%);
+}
+
 .weheader{
     background-color: black;
     color: orange;
@@ -32,6 +36,11 @@ html,body{
 
 main{
     position: relative;
+    width: 100%;
+}
+
+#listWrapper{
+    position: relative;
     width: 90%;
     left: 5%;
     margin-top: 10px;
@@ -39,13 +48,13 @@ main{
     background-color: #EFEFEF;
 }
 
-#listWrapper{
-    padding: 10px;    
+#listWrapper header{
+    padding: 10px;
 }
 
 #listSection{
     position: relative;
-    width: 100%;    
+    padding: 10px;
 }
 
 #sortButtonWrapper{
@@ -160,17 +169,57 @@ a{
 
 #pageButtonWrapper button{
     cursor: pointer;
-    border: none;
     padding: 5px 10px;
     font-weight: bold;
     height: 30px;
     text-align: center;
     margin: 0 5px;
+    border: none;
     border-style: solid;
     border-width: 2px;
 }
 
+#detailWrapper{
+    width: 100%;
+    position: relative;
+}
+
+.detailSection{
+    position: absolute;
+    padding: 20px 10px 10px 10px;
+    font-size: 26px;
+}
+
+.backLink{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.apartmentDetail{
+    background-color: white;
+}
+
+#bg {
+    min-height: 100%;
+    min-width: 768px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
 @media screen and (max-width: 768px){
+    img.bg {
+        left: 50%;
+        margin-left: -384px; 
+    }
+    
+    .weheader h1{
+        padding: 10px 0px 10px 10px; 
+    }
+    
     .weheader h2{
         display: none;
     }

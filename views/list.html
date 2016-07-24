@@ -15,7 +15,7 @@
 
         <ul>
             <li ng-repeat="apartment in apartments | orderBy:sortingOrder:reverse | startFrom:currentPage*pageSize | limitTo:pageSize">
-                <a ui-sref="detail({name: apartment.name.replace(' ','_'), apartment: apartment})">
+                <a ui-sref="detail({name: apartment.name})">
                     <section class="apartmentSectionWrapper">
                         <img ng-src="./files/{{apartment.image}}">  
                         <div class="apartmentInfo">

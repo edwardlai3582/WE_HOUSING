@@ -1,5 +1,3 @@
-app.controller('detailController', ['$scope', '$stateParams', function($scope, $stateParams) {
-    $scope.apartment = $stateParams.apartment;
-
-    
+app.controller('detailController', ['$scope',  'apartmentData', function($scope, apartmentData) {
+    $scope.apartment = apartmentData;    
 }]);

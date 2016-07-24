@@ -1,6 +1,6 @@
-app.controller('listController', ['$scope', '$window', 'apartmentData', function($scope, $window, apartmentData) {
-    $scope.searchTerm = apartmentData.data.searchTerm;
-    $scope.apartments = apartmentData.data.apartments.sort(function(a, b) {
+app.controller('listController', ['$scope', '$window', 'apartmentsData', function($scope, $window, apartmentsData) {
+    $scope.searchTerm = apartmentsData.data.searchTerm;
+    $scope.apartments = apartmentsData.data.apartments.sort(function(a, b) {
         if (a.name < b.name){
             return -1;    
         }
