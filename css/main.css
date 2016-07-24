@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=PT+Serif+Caption';
+@import 'https://fonts.googleapis.com/css?family=Pattaya';
 
 html,body{
     position: relative;
@@ -203,7 +203,7 @@ a{
 .apartmentDetail > .name{
     color: #6BE790;
     font-size: 40px;
-    font-family: 'PT Serif Caption', serif;
+    font-family: 'Pattaya', sans-serif;
 }
 
 #bg {
