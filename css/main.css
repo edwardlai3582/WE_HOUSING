@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-@import 'https://fonts.googleapis.com/css?family=Julius+Sans+One';
+@import 'https://fonts.googleapis.com/css?family=PT+Serif+Caption';
 
 html,body{
     position: relative;
@@ -201,9 +201,9 @@ a{
 }
 
 .apartmentDetail > .name{
-    color: #31DAD4;
+    color: #6BE790;
     font-size: 40px;
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'PT Serif Caption', serif;
 }
 
 #bg {
